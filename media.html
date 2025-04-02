@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="media.css">
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar"> <div class="navbar">
+        <div class="Library"><i class="fa-solid fa-list"></i> Library</div>
+        <div class="home"><i class="fa-solid fa-house"></i>   Home</div>
+        <div class="favourites"><i class="fa-solid fa-heart"></i>Favourites</div>
+        <div class="Hours-played"><i class="fa-solid fa-hourglass-start"></i> Hours Played</div>
+        <div class="radio"><i class="fa-solid fa-radio"></i>Radio</div>
+    </div></div>
+        <div class="main-content">
+            <header>
+    <div class="logo">
+       <a href="#"> <img src="logo.png" alt="logo"></a>
+    </div>
+    <div class="searchbox">
+        <div class="searchbox-input">
+            <input type="text" class="searchinput" placeholder="Buzz your mind  ">
+        </div>
+        <div class="searchbox-btn">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+    </div>
+    <div class="premium">
+        Premium
+    </div>
+    <div class="profile">
+        <div class="dropdown">
+            <button class="dropbtn"><i class="fa-regular fa-circle-user"></i></button>
+            <div class="dropdown-content">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+            </div>
+          </div>
+    </div>
+</header>
+            <div class="music-section">
+                <div class="card">
+                    <img src="cover.jpg" alt="Album 1">
+                    <span style="color: aliceblue;">We Rolling</span>
+                    <span class="songlistplay"><i class="far fa-play-circle" style="color: white;"></i></span>
+                </div>
+                <div class="card">
+                    <img src="cover1.jpeg" alt="Album 2" style="height: 150px; object-fit: cover;">
+                    <span style="color: aliceblue;">WHO?WHAT?</span>
+                    <span class="songlistplay"><i class="far fa-play-circle" style="color: white;"></i></span>
+                </div>
+                <div class="card">
+                    <img src="cover2.jpeg" alt="Album 3" style="height: 150px; object-fit: cover;">
+                    <span style="color: aliceblue;">52 BARS</span>
+                    <span class="songlistplay"><i class="far fa-play-circle" style="color: white;"></i></span>
+                </div>
+				<div class="card">
+                    <img src="album4.jpg" alt="Album 4">
+                    <p>Album Name</p>
+                </div>
+				<div class="card">
+                    <img src="album5.jpg" alt="Album 5">
+                    <p>Album Name</p>
+                </div>
+				<div class="card">
+                    <img src="album6.jpg" alt="Album 6">
+                    <p>Album Name</p>
+                </div>
+				<div class="card">
+                    <img src="album7.jpg" alt="Album 7">
+                    <p>Album Name</p>
+                </div>
+				<div class="card">
+                    <img src="album8.jpg" alt="Album 8">
+                    <p>Album Name</p>
+                </div>
+            </div>
+			
+            </div>
+            </div>
+
+    </div>
+    <div class="footer"> <div class="player">
+        <input type="range" id="myProgressBar" class="progress-bar" min="0" max="100" value="0">
+        <div class="controls">
+            <button>&#x1f500;</button>  <!-- Shuffle -->
+            <button>&#x23EE;</button>  <!-- Previous -->
+            <button id="masterplay">&#x25B6;</button>  <!-- Play -->
+            <button>&#x23ED;</button>  <!-- Next -->
+            <button>&#x1F501;</button>  <!-- Repeat -->
+        </div>
+        <div class="icons">
+            <button>&#x2665;</button>  <!-- Heart -->
+            <button>&#x1F50A;</button>  <!-- Speaker -->
+            <button>&#x1F517;</button>  <!-- Share -->
+            <button>&#x2630;</button>  <!-- Menu -->
+        </div>
+    </div></div>
+    
+    <script src="media.js" defer></script>
+</body>
+</html>

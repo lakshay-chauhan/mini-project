@@ -1,0 +1,338 @@
+
+	 @media (max-width: 480px) {
+    .container {
+        flex-direction: column;
+        height: auto;
+    }
+    .sidebar {
+        width: 100%;
+        height: auto;
+        padding: 10px;
+        text-align: center;
+    }
+    .main-content {
+        padding: 10px;
+    }
+    .music-section {
+        flex-direction: column;
+        align-items: center;
+    }
+    .card {
+        width: 90%;
+    }
+    .player {
+        position: relative;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+    .sidebar {
+        width: 20%;
+    }
+    .main-content {
+        width: 80%;
+    }
+    .card {
+        width: 45%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .sidebar {
+        width: 18%;
+    }
+    .main-content {
+        width: 82%;
+    }
+    .card {
+        width: 30%;
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+    .sidebar {
+        width: 15%;
+    }
+    .main-content {
+        width: 85%;
+    }
+    .card {
+        width: 22%;
+    }
+}
+
+@media (min-width: 1281px) {
+    .container {
+        max-width: 1280px;
+        margin: 0 auto;
+    }
+    .sidebar {
+        width: 15%;
+    }
+    .main-content {
+        width: 85%;
+    }
+    .card {
+        width: 18%;
+    }
+}
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    height: 100%;
+    overflow-x: hidden;
+}
+        .container {
+            display: flex;
+            height: 100vh;
+        }
+        .sidebar {
+            width: 15%;
+            background-color: #121212;
+            padding: 20px;
+			margin-right:5%;
+			
+        }
+        .main-content {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #181818;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .search-bar {
+            background-color: #333;
+            border: none;
+            padding: 5px;
+            border-radius: 5px;
+            color: white;
+        }
+        .music-section {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 20px;
+        }
+        .card {
+            background-color: #181818;
+            padding: 10px;
+            border-radius: 5px;
+            width: 150px;
+            text-align: center;
+        }
+        .card img {
+            width: 100%;
+            border-radius: 5px;
+        }
+        .footer {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            background-color: #181818;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+		.player {
+            width: 98%;
+            position: fixed;
+            bottom: 0;
+            background-color: black;
+            padding: 10px;
+            text-align: center;
+        }
+        .progress-bar {
+            width: 100%;
+        }
+        .controls {
+            display: flex;
+            justify-content: space-around;
+            font-size: 24px;
+            
+        }
+        .icons {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+            font-size: 20px;
+        }
+        button {
+            background: none;
+            border: none;
+            color: white;
+            font-size: 24px;
+            cursor: pointer;
+			transition: color 1s;
+        }
+		button:hover{
+			color:blue;
+		}
+        input[type="range"] {
+            width: 100%;
+        }
+		.card{
+			height: 200px;
+			margin: 20px;
+		}
+		.navbar{
+  background-color: pink;
+  width: 12.5%;
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content:space-evenly;
+  height: 75vh;
+  position: absolute;
+}
+header {
+    width: 100%;
+    height: 100px;
+    background-color: aqua;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 30px;
+}
+.logo{
+    height: 70px;   
+    width: 60px;
+}
+.logo img{
+  height: 60px;
+  width: 60px;
+  border: none;
+  border-radius: 50%;
+}
+.logo:hover img{
+  height: 70px;
+  width: 70px;
+  border: none;
+  border-radius: 50%;
+  transition-delay: 10ms;
+  transition-duration: 500ms;
+}
+.searchbox{
+    display: flex;
+    align-items: center;
+    height: 50%;
+    width: 30%;
+    background-color: beige;
+    padding: 5px;
+    justify-content: center;
+    margin-left: 130px;
+    border: none;
+    border-radius: 5%;
+
+}
+.searchbox-input{
+    width: 70%;
+    height: 60%;
+    display: flex;
+    align-items: center;
+    background-color: red;
+    
+}
+.searchbox-btn{
+    width: 12%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    border: solid 1px black;
+    padding-left: 10px; 
+    border-top-right-radius: 50% ;
+    border-bottom-right-radius: 50% ;
+}
+.searchbox-btn:hover{
+  background-color: rgb(220, 220, 207);
+  color: green;
+  transform: scale(0.95);
+}
+.searchbox-btn i{
+    font-size: 35px;
+
+}
+.searchinput{
+    height: 80%;
+    width: 100%;
+}
+.premium{
+    height: 50px;
+    width: 100px;
+    border: none;
+    border-radius: 30px;
+    background-color: rgb(133, 207, 133);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 150px;
+}
+.premium:hover{
+    background-color: greenyellow;
+    transform:scale(1.2);
+    transition-duration: 300ms;
+}
+.profile{
+  display: flex;
+  margin-right: 3vw;
+}
+.dropbtn{ 
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 35%;
+}
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 50px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #f1f1f1;
+    transform: scale(1.05);
+    
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+    transform: scale(1.1);
+  } 
+  /* .card{
+    display: flex;
+  }
+  .card img{
+    
+   } */
+    
